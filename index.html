@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" /> -->
+    <title>Cat&Dog</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="cont_header">
+        <label class="lbl_header">Grandes ofertas en comederos</label>
+        <div class="cont_btn_header">
+          <select name="idiomas" id="idiomas" class="selector">
+            <option>Español</option>
+            <option>Inglés</option>
+            <option>Francés</option>
+          </select>
+          <select name="moneda" id="moneda" class="selector">
+            <option>COP$</option>
+            <option>ARG$</option>
+            <option>USD$</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav_bar_container">
+      <img src="img/Logo.PNG" alt="Logo" class="logo" />
+      <nav class="nav_bar">
+        <a href="#"><i class="fas fa-paw"></i>Categorías</a>
+        <a href="#"><i class="fas fa-paw"></i>Pets</a>
+        <a href="#"><i class="fas fa-paw"></i>Nosotros</a>
+        <a href="#"><i class="fas fa-paw"></i>Contactanos</a>
+      </nav>
+
+      <div class="dropdown">
+        <button class="drop_menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#"><i class="fas fa-paw"></i> Categorías</a>
+          <a href="#"><i class="fas fa-paw"></i> Pets</a>
+          <a href="#"><i class="fas fa-paw"></i> Nosotros</a>
+          <a href="#"><i class="fas fa-paw"></i> Contactanos</a>
+        </div>
+      </div>
+
+      <!-- <button class="drop_menu">
+        <i class="fas fa-bars">
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </i>
+      </button> -->
+    </div>
+
+    <div class="banner_container">
+      <div class="title_banner item_banner">¡Es un placer tenerte aquí!</div>
+      <div class="text_banner item_banner">¡Comederos en descuento!</div>
+      <button class="btn_banner item_banner">COMEDEROS</button>
+    </div>
+
+    <div class="products_section">
+      <img src="img/pawprint1.png" alt="huella" class="big_paw" />
+      <h2 class="products_title">Productos Destacados</h2>
+      <nav class="products_navbar">
+        <a href="#product_cards">Comederos</a>
+        <span> - </span>
+        <a href="#product_cards">Accesorios</a>
+        <span> - </span>
+        <a href="#product_cards">Comida</a>
+      </nav>
+    </div>
+
+    <div class="product_cards" id="product_cards">
+      <div class="product_container">
+        <img src="img/churrasquito.png" alt="churrasquito" />
+        <p>Juguete Churrasquito</p>
+        <label class="product_price">$150</label>
+      </div>
+      <div class="product_container">
+        <img src="img/comedero.png" alt="comedero" />
+        <p>Comedero para perro</p>
+        <label class="product_price">$250</label>
+      </div>
+      <div class="product_container">
+        <img src="img/Huesito.png" alt="huesito" />
+        <p>Juguete Huesito</p>
+        <label class="product_price">$650</label>
+      </div>
+    </div>
+
+    <div class="form_container">
+      <h2 class="title_contact_us">Contáctanos</h2>
+      <form class="form_contact_us">
+        <div><input class="contact_us_input" type="text" id="nombre" placeholder="Nombre y apellido" /></div>
+        <div><input class="contact_us_input" type="text" id="email" placeholder="Ingresá tu correo electrónico" /></div>
+        <div><input class="contact_us_input" type="number" id="telefono" placeholder="Teléfono" /></div>
+        <div class="btn_form_container">
+          <button class="btn_reset_form">Resetear</button>
+          <button class="btn_send_form">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="suscription_container">
+      <div class="text_suscription">
+        <img src="img/mail.png" alt="mail" class="mail_icon" />
+        <label>Suscríbete para más novedades</label>
+      </div>
+      <form class="form_suscribe">
+        <input type="text" id="suscribirse" placeholder="Ingresa tu correo electrónico" class="suscribe_input" />
+        <button class="btn_suscribe">Suscribirme</button>
+      </form>
+    </div>
+
+    <div class="suscription_banner">
+      <div class="block_suscription">
+        <img src="img/Logo2.png" alt="logo" class="logo2_mobile" />
+        <div class="item_container">
+          <img src="img/localidad.png" alt="localidad" class="img_suscription_banner" />
+          <div class="suscription_txt_container">
+            <div>Localidad</div>
+            <label class="complement_text_suscription">Calle - provincia</label>
+          </div>
+        </div>
+        <div class="item_container">
+          <img src="img/telefono.png" alt="telefono" class="img_suscription_banner" />
+          <div class="suscription_txt_container">
+            <div>Teléfono</div>
+            <label class="complement_text_suscription">Número de teléfono</label>
+          </div>
+        </div>
+        <div class="item_container">
+          <img src="img/correo.png" alt="Correo electrónico" class="img_suscription_banner" />
+          <div class="suscription_txt_container">
+            <div>Correo Electrónico</div>
+            <label class="complement_text_suscription">Dirección de correo</label>
+          </div>
+        </div>
+      </div>
+
+      <img src="img/Logo2.png" alt="logo" class="logo2" />
+    </div>
+
+    <footer>
+      <label>Todos los derechos reservados Front End</label>
+      <a href="https://www.instagram.com/elkin182_/" target="_blank"><i class="fab fa-instagram img_redes"></i></a>
+      <a href="https://www.facebook.com/Elkinnxp/" target="_blank"><i class="fab fa-facebook img_redes"></i></a>
+    </footer>
+  </body>
+</html>
